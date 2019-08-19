@@ -1,0 +1,111 @@
+{
+  "name": "myigniter",
+  "authors": [
+    "Asrul Hanafi <hanafi.asrul@gmail.com>"
+  ],
+  "description": "myigniter assets",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "bootstrap": "latest",
+    "alertify-js": "latest",
+    "font-awesome": "latest",
+    "AdminLTE": "admin-lte#~2.3.8",
+    "bootstrap-show-password": "latest",
+    "list.js": "latest",
+    "jquery": "latest",
+    "slimScroll": "latest",
+    "iCheck": "latest",
+    "datatables": "latest",
+    "fancybox": "latest",
+    "jquery-nestable": "*",
+    "chosen": "latest",
+    "dropzone": "latest",
+    "clipboard": "^1.5.12",
+    "flag-icon-css": "latest"
+  },
+  "overrides": {
+    "bootstrap": {
+      "main": [
+        "./dist/js/bootstrap.min.js",
+        "./dist/css/bootstrap.min.css",
+        "./dist/fonts/*.*"
+      ]
+    },
+    "alertify-js": {
+      "main": [
+        "./build/css/alertify.min.css",
+        "./build/css/themes/*.*",
+        "./build/alertify.min.js"
+      ]
+    },
+    "font-awesome": {
+      "main": [
+        "./css/font-awesome.min.css",
+        "./fonts/*.*"
+      ]
+    },
+    "AdminLTE": {
+      "main": [
+        "./dist/css/AdminLTE.min.css",
+        "./dist/css/skins/*.*",
+        "./dist/js/app.min.js",
+        "./dist/img/*.*"
+      ]
+    },
+    "slimScroll": {
+      "main": "./jquery.slimscroll.min.js"
+    },
+    "iCheck": {
+      "main": [
+        "./icheck.min.js",
+        "./skins/**/*.*"
+      ]
+    },
+    "bootstrap-show-password": {
+      "main": "./bootstrap-show-password.min.js"
+    },
+    "list.js": {
+      "main": "./dist/list.min.js"
+    },
+    "jquery": {
+      "main": "./dist/jquery.min.js"
+    },
+    "datatables": {
+      "main": [
+        "./media/css/*.*",
+        "./media/images/*.*",
+        "./media/js/*.*",
+        "./media/extensions/**/**/*.*"
+      ]
+    },
+    "fancybox": {
+      "main": "./source/**/*.*"
+    },
+    "jquery-nestable": {
+      "main": [
+        "./jquery.nestable.css",
+        "./jquery.nestable.js"
+      ]
+    },
+    "chosen": {
+      "main": [
+        "./*.png",
+        "./*.js",
+        "./*.css"
+      ]
+    },
+    "dropzone": {
+      "main": "./dist/min/*.*"
+    },
+    "clipboard": {
+      "main": "./dist/clipboard.min.js"
+    },
+    "flag-icon-css": {
+      "main": [
+        "./flags/**/*.*",
+        "./css/flag-icon.min.css"
+      ]
+    }
+  }
+}

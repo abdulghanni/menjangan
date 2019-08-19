@@ -1,0 +1,40 @@
+.DS_Store
+
+application/cache/*
+assets/cache/*
+!application/cache/index.html
+!application/cache/.htaccess
+
+application/logs/*
+!application/logs/index.html
+!application/logs/.htaccess
+
+user_guide_src/build/*
+user_guide_src/cilexer/build/*
+user_guide_src/cilexer/dist/*
+user_guide_src/cilexer/pycilexer.egg-info/*
+
+# Composer
+composer.lock
+
+# Bower and Node
+#-------------------------
+bower_components/*
+node_modules/*
+
+# IDE Files
+#-------------------------
+/nbproject/
+.idea/*
+
+# Upload files
+assets/uploads/image*
+assets/uploads/*
+
+## Sublime Text cache files
+*.tmlanguage.cache
+*.tmPreferences.cache
+*.stTheme.cache
+*.sublime-workspace
+*.sublime-project
+

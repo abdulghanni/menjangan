@@ -1,0 +1,29 @@
+{
+  "name": "myIgniter",
+  "version": "3.9.0",
+  "private": true,
+  "description": "myIgniter is custom framework",
+  "main": "gulpfile.js",
+  "author": "Asrul Hanafi <hanafi.asrul@gmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "latest",
+    "gulp-autoprefixer": "latest",
+    "gulp-clean": "latest",
+    "gulp-concat": "latest",
+    "gulp-csso": "latest",
+    "gulp-filter": "latest",
+    "gulp-flatten": "latest",
+    "gulp-htmlmin": "latest",
+    "gulp-imagemin": "latest",
+    "gulp-main-bower-files": "latest",
+    "gulp-plumber": "latest",
+    "gulp-remove-html-comments": "latest",
+    "gulp-rename": "latest",
+    "gulp-uglify": "latest",
+    "imagemin-pngquant": "latest",
+    "main-bower-files": "latest",
+    "merge-stream": "latest"
+  },
+  "dependencies": {}
+}

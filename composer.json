@@ -1,0 +1,11 @@
+{
+	"description" : "myIgniter Custom framework",
+	"name" : "myIgniter",
+	"type" : "project",
+	"license": "MIT",
+    "require": {
+    	"php": ">=5.6",
+    	"tan5en5/codeigniter-debugbar": "dev-master",
+		"matthiasmullie/minify": "^1.3"
+    }
+}
