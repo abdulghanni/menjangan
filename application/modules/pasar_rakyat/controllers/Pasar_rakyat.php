@@ -25,7 +25,7 @@ class Pasar_rakyat extends MY_Controller
 		$crud->set_subject("Pasar");
 
 		// Show in
-		$crud->add_fields(["nama", "alamat", "luas_lahan", "luas_bangunan", "jumlah_kios", "jumlah_los", "pengeloaan", "latitude", "longitude", "foto", "keterangan"]);
+		$crud->add_fields(["nama", "alamat", "luas_lahan", "luas_bangunan", "jumlah_kios", "jumlah_los", "pengeloaan", "latitude", "longitude", "foto","foto2","foto3","foto4", "keterangan"]);
 		$crud->edit_fields(["nama", "alamat", "luas_lahan", "luas_bangunan", "jumlah_kios", "jumlah_los", "pengeloaan", "latitude", "longitude", "foto", "keterangan"]);
 		$crud->columns(["nama", "alamat", "luas_lahan", "luas_bangunan", "jumlah_kios", "jumlah_los", "pengeloaan", "latitude", "longitude", "foto", "keterangan"]);
 		$crud->order_by('nama', 'desc');

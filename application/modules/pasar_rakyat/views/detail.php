@@ -179,147 +179,135 @@
 			                <div class="box-header with-border">
 			                    <h3 class="box-title"><i class="fa fa-list fa-fw"></i> Record  Pasar</h3>
 			                </div>
-
-			                <form action="http://localhost/menjangan/pasar_rakyat/index/read/5" method="post" class="form-horizontal" id="crudForm" autocomplete="off" enctype="multipart/form-data" accept-charset="utf-8">
-			                    <input type="hidden" name="__kotaxdev_token" value="88ae258d98bcc6389711864b05980a9c" />
-			                    <div id='main-table-box' class="box-body">
-			                        <div class='row' id="nama_field_box">
-			                            <div class='form-display-as-box col-sm-2 control-label' id="nama_display_as_box">
-			                                <label>
-			                                    Nama </label>
-			                            </div>
-			                            <div class='form-input-box col-sm-8' id="nama_input_box">
-			                                <div id="field-nama" class="readonly_label"><?=$l->nama?></div>
-			                            </div>
-			                        </div>
-			                        <br>
-			                        <div class='row' id="alamat_field_box">
-			                            <div class='form-display-as-box col-sm-2 control-label' id="alamat_display_as_box">
-			                                <label>
-			                                    Alamat </label>
-			                            </div>
-			                            <div class='form-input-box col-sm-8' id="alamat_input_box">
-			                                <div id="field-alamat" class="readonly_label"><?=$l->alamat?></div>
-			                            </div>
-			                        </div>
-			                        <br>
-			                        <div class='row' id="luas_lahan_field_box">
-			                            <div class='form-display-as-box col-sm-2 control-label' id="luas_lahan_display_as_box">
-			                                <label>
-			                                    Luas lahan </label>
-			                            </div>
-			                            <div class='form-input-box col-sm-8' id="luas_lahan_input_box">
-			                                <div id="field-luas_lahan" class="readonly_label"><?=$l->luas_lahan?></div>
-			                            </div>
-			                        </div>
-			                        <br>
-			                        <div class='row' id="luas_bangunan_field_box">
-			                            <div class='form-display-as-box col-sm-2 control-label' id="luas_bangunan_display_as_box">
-			                                <label>
-			                                    Luas bangunan </label>
-			                            </div>
-			                            <div class='form-input-box col-sm-8' id="luas_bangunan_input_box">
-			                                <div id="field-luas_bangunan" class="readonly_label"><?=$l->luas_bangunan?></div>
-			                            </div>
-			                        </div>
-			                        <br>
-			                        <div class='row' id="jumlah_kios_field_box">
-			                            <div class='form-display-as-box col-sm-2 control-label' id="jumlah_kios_display_as_box">
-			                                <label>
-			                                    Jumlah kios </label>
-			                            </div>
-			                            <div class='form-input-box col-sm-8' id="jumlah_kios_input_box">
-			                                <div id="field-jumlah_kios" class="readonly_label"><?=$l->jumlah_kios?></div>
-			                            </div>
-			                        </div>
-			                        <br>
-			                        <div class='row' id="jumlah_los_field_box">
-			                            <div class='form-display-as-box col-sm-2 control-label' id="jumlah_los_display_as_box">
-			                                <label>
-			                                    Jumlah los </label>
-			                            </div>
-			                            <div class='form-input-box col-sm-8' id="jumlah_los_input_box">
-			                                <div id="field-jumlah_los" class="readonly_label"><?=$l->jumlah_los?></div>
-			                            </div>
-			                        </div>
-			                        <br>
-			                        <div class='row' id="pengeloaan_field_box">
-			                            <div class='form-display-as-box col-sm-2 control-label' id="pengeloaan_display_as_box">
-			                                <label>
-			                                    Pengeloaan </label>
-			                            </div>
-			                            <div class='form-input-box col-sm-8' id="pengeloaan_input_box">
-			                                <div id="field-pengeloaan" class="readonly_label"><?=$l->pengeloaan?></div>
-			                            </div>
-			                        </div>
-			                        <br>
-			                        <div class='row' id="latitude_field_box">
-			                            <div class='form-display-as-box col-sm-2 control-label' id="latitude_display_as_box">
-			                                <label>
-			                                    Latitude </label>
-			                            </div>
-			                            <div class='form-input-box col-sm-8' id="latitude_input_box">
-			                                <div id="field-latitude" class="readonly_label"><?=$l->latitude?></div>
-			                            </div>
-			                        </div>
-			                        <br>
-			                        <div class='row' id="longitude_field_box">
-			                            <div class='form-display-as-box col-sm-2 control-label' id="longitude_display_as_box">
-			                                <label>
-			                                    Longitude </label>
-			                            </div>
-			                            <div class='form-input-box col-sm-8' id="longitude_input_box">
-			                                <div id="field-longitude" class="readonly_label"><?=$l->longitude?></div>
-			                            </div>
-			                        </div>
-			                        <br>
-			                        <div class='row' id="foto_field_box">
-			                            <div class='form-display-as-box col-sm-2 control-label' id="foto_display_as_box">
-			                                <label>
-			                                    Foto </label>
-			                            </div>
-			                            <div class='form-input-box col-sm-8' id="foto_input_box">
-			                                <div id="field-foto" class="readonly_label"><a href="<?=base_url()?>assets/uploads/<?=$l->foto?>" class="image-thumbnail"><img src="<?=base_url()?>assets/uploads/<?=$l->foto?>" height="150px"></a>
-			                                </div>
-			                            </div>
-			                        </div>
-			                        <br>
-			                        <div class='row' id="keterangan_field_box">
-			                            <div class='form-display-as-box col-sm-2 control-label' id="keterangan_display_as_box">
-			                                <label>
-			                                    Keterangan </label>
-			                            </div>
-			                            <div class='form-input-box col-sm-8' id="keterangan_input_box">
-			                                <div id="field-keterangan" class="readonly_label"><?=$l->keterangan?></div>
-			                            </div>
-			                        </div>
-
-			                        <div class='row' id="keterangan_field_box">
-			                            <div class='form-display-as-box col-sm-2 control-label' id="keterangan_display_as_box">
-			                                <label>
-			                                    MAP </label>
-			                            </div>
-			                            <div class='form-input-box col-sm-8' id="keterangan_input_box">
-			                            	<div id="myMap" style="position:relative;width:600px;height:400px;"></div>
-			                            </div>
-			                        </div>
-			                        <br>
-
-			                        <div id='report-error' class='report-div error alert alert-danger' role="alert"></div>
-			                        <div id='report-success' class='report-div success alert alert-success'></div>
-			                    </div>
-
-			                    <div class="box-footer">
-			                        <div class="row">
-			                            <div class="col-sm-8 col-sm-offset-2">
-			                                <p>
-			                                    <button type="button" id="cancel-button" class="btn btn-default btn-flat back-to-list">Back to list</button>
-			                                    <span class='small-loading' id='FormLoading'>Loading, updating changes...</span>
-			                                </p>
-			                            </div>
-			                        </div>
-			                    </div>
-			                </form>
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-md-12 text-center" style=" border: 1px solid #ccc;">
+                                        <div id="field-foto" class="readonly_label"><a href="<?=base_url()?>assets/uploads/<?=$l->foto?>" class="image-thumbnail"><img src="<?=base_url()?>assets/uploads/<?=$l->foto?>" height="150px"></a>
+                                                                        </div></div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-4 text-center" style=" border: 1px solid #ccc;">
+                                        <div class='form-input-box col-sm-8' id="foto_input_box">
+                                            <div id="field-foto" class="readonly_label"><a href="<?=base_url()?>assets/uploads/<?=$l->foto2?>" class="image-thumbnail"><img src="<?=base_url()?>assets/uploads/<?=$l->foto2?>" height="150px"></a>
+                                            </div>
+                                        </div>  
+                                    </div>
+                                    <div class="col-md-4 text-center" style=" border: 1px solid #ccc;">
+                                        <div class='form-input-box col-sm-8' id="foto_input_box">
+                                            <div id="field-foto" class="readonly_label"><a href="<?=base_url()?>assets/uploads/<?=$l->foto2?>" class="image-thumbnail"><img src="<?=base_url()?>assets/uploads/<?=$l->foto2?>" height="150px"></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 text-center" style=" border: 1px solid #ccc;">
+                                        <div class='form-input-box col-sm-8' id="foto_input_box">
+                                            <div id="field-foto" class="readonly_label"><a href="<?=base_url()?>assets/uploads/<?=$l->foto2?>" class="image-thumbnail"><img src="<?=base_url()?>assets/uploads/<?=$l->foto2?>" height="150px"></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <table class="table table-bordered">
+                                        <tbody>
+                                          <tr>
+                                            <td class="col-sm-2"><span>Nama</span></td>
+                                            <td class="col-sm-10">
+                                              <div class="col-lg-12 col-md-12 col-sm-12" style="padding-left: 0px;">
+                                              <input type="text" class="form-control" name="nip" id="nip" value="<?=$l->nama?>" readonly>
+                                              </div>
+                                            </td>
+                                          </tr>
+                                          <tr>
+                                            <td class="col-sm-2"><span>Alamat</span></td>
+                                            <td class="col-sm-10">
+                                              <div class="col-lg-12 col-md-12 col-sm-12" style="padding-left: 0px;">
+                                              <input type="text" class="form-control" name="first_name" id="first_name" value="<?=$l->alamat?>" readonly>
+                                              </div>
+                                            </td>
+                                          </tr>
+                                          <tr>
+                                            <td class="col-sm-2"><span>Luas Lahan</span></td>
+                                            <td class="col-sm-10">
+                                              <div class="col-lg-12 col-md-12 col-sm-12" style="padding-left: 0px;">
+                                              <input type="text" class="form-control" name="first_name" id="first_name" value="<?=$l->luas_lahan?>" readonly>
+                                              </div>
+                                            </td>
+                                          </tr>
+                                          <tr>
+                                            <td class="col-sm-2"><span>Luas Bangunan</span></td>
+                                            <td class="col-sm-10">
+                                              <div class="col-lg-12 col-md-12 col-sm-12" style="padding-left: 0px;">
+                                              <input type="text" class="form-control" name="first_name" id="first_name" value="<?=$l->luas_bangunan?>" readonly>
+                                              </div>
+                                            </td>
+                                          </tr>
+                                          <tr>
+                                            <td class="col-sm-2"><span>Jumlah kios</span></td>
+                                            <td class="col-sm-10">
+                                              <div class="col-lg-12 col-md-12 col-sm-12" style="padding-left: 0px;">
+                                              <input type="text" class="form-control" name="first_name" id="first_name" value="<?=$l->jumlah_kios?>" readonly>
+                                              </div>
+                                            </td>
+                                          </tr>
+                                          <tr>
+                                            <td class="col-sm-2"><span>Jumlah Los</span></td>
+                                            <td class="col-sm-10">
+                                              <div class="col-lg-12 col-md-12 col-sm-12" style="padding-left: 0px;">
+                                              <input type="text" class="form-control" name="first_name" id="first_name" value="<?=$l->jumlah_los?>" readonly>
+                                              </div>
+                                            </td>
+                                          </tr>
+                                          <tr>
+                                            <td class="col-sm-2"><span>Pengelolaan</span></td>
+                                            <td class="col-sm-10">
+                                              <div class="col-lg-12 col-md-12 col-sm-12" style="padding-left: 0px;">
+                                              <input type="text" class="form-control" name="first_name" id="first_name" value="<?=$l->pengeloaan?>" readonly>
+                                              </div>
+                                            </td>
+                                          </tr>
+                                          <tr>
+                                            <td class="col-sm-2"><span>Latitude</span></td>
+                                            <td class="col-sm-10">
+                                              <div class="col-lg-12 col-md-12 col-sm-12" style="padding-left: 0px;">
+                                              <input type="text" class="form-control" name="first_name" id="first_name" value="<?=$l->latitude?>" readonly>
+                                              </div>
+                                            </td>
+                                          </tr>
+                                          <tr>
+                                            <td class="col-sm-2"><span>Longitude</span></td>
+                                            <td class="col-sm-10">
+                                              <div class="col-lg-12 col-md-12 col-sm-12" style="padding-left: 0px;">
+                                              <input type="text" class="form-control" name="first_name" id="first_name" value="<?=$l->longitude?>" readonly>
+                                              </div>
+                                            </td>
+                                          </tr>
+                                          <tr>
+                                            <td class="col-sm-2"><span>Keterangan</span></td>
+                                            <td class="col-sm-10">
+                                              <div class="col-lg-12 col-md-12 col-sm-12" style="padding-left: 0px;">
+                                              <input type="text" class="form-control" name="first_name" id="first_name" value="<?=$l->keterangan?>" readonly>
+                                              </div>
+                                            </td>
+                                          </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div id="myMap" style="position:relative;width:100%;height:400px;"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+		                    <div class="box-footer">
+		                        <div class="row">
+		                            <div class="col-sm-8 col-sm-offset-2">
+		                                <p>
+		                                    <button type="button" id="cancel-button" class="btn btn-default btn-flat back-to-list">Back to list</button>
+		                                    <span class='small-loading' id='FormLoading'>Loading, updating changes...</span>
+		                                </p>
+		                            </div>
+		                        </div>
+		                    </div>
 			            </div>
 			        </div>
 			    </div>
